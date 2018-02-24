@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <!--
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   -->
+    <link rel="stylesheet" href="w3css.css">
+   
+ 
+    <title>Firebase Auth</title>
+</head>
+<body>
+  
+<h1 class="w3-center w3-teal">Firebase Authentication</h1>
+<div class="w3-padding-left" id="user_div"> 
+
+        <form action="" class="w3-display-center">
+            <div class="imgcontainer">
+             
+            </div>
+          
+            <div class="w3-container">
+              <label><b>Email</b></label>
+              <input id="txtEmail" class="w3-input" type="text" placeholder="Enter Email" name="uname" required>
+              <br>
+              <label><b>Password</b></label>
+              <input id="txtPass" class="w3-input" type="password" placeholder="Enter Password" name="psw" required>
+               <br>
+              <button id="btnlogin" onclick="login()" class="w3-button w3-cyan w3-border-blue" type="submit">Login</button>
+              <button id="btnsignup" class="w3-button w3-cyan w3-border-blue" type="submit">Sign Up</button>
+              <button id="btnlogout" class="w3-button w3-cyan w3-border-blue w3-hide" type="submit">Log Out</button>
+           
+            </div>
+          
+         
+          </form> 
+
+</div>
+<div class="w3-container w3-blue" id="logged_div">
+<h1 id="h1"></h1>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.10.0/firebase.js"></script>
+<script>
+  // Initialize Firebase
+  var config = {
+    apiKey: "AIzaSyCHzsBlSuWmVV6KpWkdAzweJUGnGtHVTIs",
+    authDomain: "mose2-8033b.firebaseapp.com",
+    databaseURL: "https://mose2-8033b.firebaseio.com",
+    projectId: "mose2-8033b",
+    storageBucket: "mose2-8033b.appspot.com",
+    messagingSenderId: "229426058281"
+  };
+  firebase.initializeApp(config);
+</script>
+<script src="index.js"></script>
+
+    
+</body>
+</html>
